@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: large;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    background-color: #4B0082;
+    padding: 0 20px;
+}
+
+header img {
+    height: 80px;
+}
+
+.header .box button {
+    margin: 0 5px;
+}
+
+.container {
+    margin-top: 100px;
+    padding: 20px;
+    background-color: #FFFFFF;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+button {
+    font-size: large;
+    width: 160px;
+    height: 60px;
+    margin: 20px;
+    border-radius: 30px;
+    color: #FFFFFF;
+    background-color: #8A2BE2;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+    border: none;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #7A1FBF;
+    box-shadow: 0 0 20px #7A1FBF;
+    transform: scale(1.1);
+}
+
+button#submit {
+    margin: 10px;
+    width: 120px;
+    height: 50px;
+}
+
+.caixaBotões {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.caixaBotões button {
+    font-size: medium;
+    width: 120px;
+    height: 50px;
+    margin: 10px;
+    border-radius: 30px;
+    background-color: #9370DB;
+    transition: all 0.3s ease;
+}
+
+.caixaBotões button:hover {
+    background-color: #836FFF;
+    transform: scale(1.1);
+}
+
+h1, h2, h3, h4 {
+    text-align: center;
+    margin: 20px 0;
+    color: #4B0082;
+}
+
+p {
+    margin: 20px;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+/* Footer styles */
+footer {
+    background-color: #4B0082;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+footer .footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer .icones a {
+    color: white;
+    margin: 0 10px;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+footer .footerbottom {
+    margin-top: 10px;
+}
+
+footer .footerbottom p {
+    margin: 0;
+}
+
+footer .footerbottom .design {
+    font-weight: bold;
+    color: #DA70D6;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+    .container {
+        margin-top: 20px;
+        padding: 10px;
+    }
+
+    header {
+        flex-direction: column;
+        height: auto;
+    }
+
+    header img {
+        height: 60px;
+    }
+
+    .header .box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header .box button {
+        margin: 5px 0;
+    }
+
+    button {
+        width: 120px;
+        height: 50px;
+        margin: 10px;
+    }
+
+    .caixaBotões button {
+        width: 100px;
+        height: 40px;
+        margin: 10px;
+    }
+
+    p {
+        margin: 10px;
+    }
+}
